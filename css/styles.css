@@ -4,26 +4,24 @@
 
 */
 
+/*
+    Селекторы дочерних элементов
+*/
 
-#parent1 .child {
+#parent1 > p {
+    color: blue;
+}
+
+/*#parent1 > #div2 {
+    font-size: 40px;
+}*/
+
+#parent1 > .child {
+
     color: red;
 
 }
 
-#parent1 p {
-    color: blue;
-}
-
-.child {
-
-    color: green;
-
-}
-
-
-/*
-    Селекторы дочерних элементов
-*/
 
 /*
     Селекторы элементов одного уровня
