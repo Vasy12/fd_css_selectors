@@ -1,23 +1,62 @@
-:root {
-    font-size: 20px;
-    border: 10px solid red;
+* {
+    box-sizing: border-box;
 }
 
-.pParent {
-    font-size: 10px;
+:root {
+
+}
+
+div:active {
+
+}
+
+div:focus {
+
+}
+
+div:hover {
+
+}
+
+ul, ol {
+    list-style: none;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+a.navLink {
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    border-color: white;
+    background-color: darkcyan;
+    padding: 20px 40px;
+    color: white;
+    outline: none;
+}
+
+a.navLink:link{
+    border-color: red;
+}
+
+a.navLink:hover {
+    background: darkgreen;
+}
+
+a.navLink:active {
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.75);
+}
+/*21*/
+a.navLink:visited {
+    color: grey;
+}
+
+a.navLink:focus {
+    border: 1.5px solid green;
 }
 
 /*
-
-px
-em rem
-%
-vh vw vmin vmax
-
+a :link :active :visited :focus :hover
 */
-
-p {
-    font-size: 2rem;
-}
-
-
