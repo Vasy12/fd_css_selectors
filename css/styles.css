@@ -1,59 +1,29 @@
 /*
 
-    Селекторы потомков
-
-*/
-
-/*
-    Селекторы дочерних элементов
-*/
-
-
-/*
-    Селекторы элементов одного уровня
-*/
-.card {
-    width: 300px;
-    height: 600px;
-    background: darkviolet;
-    border-radius: 10px;
-    text-align: center;
-
-}
-
-.iconsContainer {
-    margin: 40px auto;
-    text-align: center;
-    display: inline-block;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: dodgerblue;
-    display: inline-block;
-}
-
-.icon + .icon {
-    margin-left: 10px;
-}
-
-/*
-//======================================//
-*/
-article > h2 + p {
-    text-indent: 3em;
-}
-
-article > h2 ~ p {
-    color: red;
-}
-
-/*
-
     Псевдоклассы
 
 */
 
+:root {
+    --test-elem-size: 400px;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+#test {
+
+    height: var(--test-elem-size);
+    width: var(--test-elem-size);
+    background: dodgerblue;
+}
+
+#test:hover {
+    cursor: grab;
+}
+
+#test:active {
+    border: 4px solid blue;
+    cursor: grabbing;
+}
