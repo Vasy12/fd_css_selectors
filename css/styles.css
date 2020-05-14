@@ -8,24 +8,36 @@
     Селекторы дочерних элементов
 */
 
-#parent1 > p {
-    color: blue;
-}
-
-/*#parent1 > #div2 {
-    font-size: 40px;
-}*/
-
-#parent1 > .child {
-
-    color: red;
-
-}
-
 
 /*
     Селекторы элементов одного уровня
 */
+.card {
+    width: 300px;
+    height: 600px;
+    background: darkviolet;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.iconsContainer {
+    margin: 40px auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: dodgerblue;
+    display: inline-block;
+}
+
+.icon + .icon {
+    margin-left: 10px;
+}
 
 
 /*
@@ -33,3 +45,5 @@
     Псевдоклассы
 
 */
+
+
