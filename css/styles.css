@@ -5,25 +5,31 @@
 */
 
 :root {
-    --test-elem-size: 400px;
+    --test-elem-size: 50px;
 }
 
 * {
     box-sizing: border-box;
 }
 
-#test {
+.test {
 
     height: var(--test-elem-size);
     width: var(--test-elem-size);
     background: dodgerblue;
+    margin: 20px auto;
 }
 
-#test:hover {
+.test:hover {
     cursor: grab;
 }
 
-#test:active {
+.test:active {
     border: 4px solid blue;
     cursor: grabbing;
 }
+
+.test:focus {
+    outline: darkblue double 4px;
+}
+
