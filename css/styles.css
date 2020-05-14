@@ -1,35 +1,23 @@
+:root {
+    font-size: 20px;
+    border: 10px solid red;
+}
+
+.pParent {
+    font-size: 10px;
+}
+
 /*
 
-    Псевдоклассы
+px
+em rem
+%
+vh vw vmin vmax
 
 */
 
-:root {
-    --test-elem-size: 50px;
+p {
+    font-size: 2rem;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-.test {
-
-    height: var(--test-elem-size);
-    width: var(--test-elem-size);
-    background: dodgerblue;
-    margin: 20px auto;
-}
-
-.test:hover {
-    cursor: grab;
-}
-
-.test:active {
-    border: 4px solid blue;
-    cursor: grabbing;
-}
-
-.test:focus {
-    outline: darkblue double 4px;
-}
 
